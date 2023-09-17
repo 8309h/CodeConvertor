@@ -124,14 +124,3 @@ To assess the quality of code and receive improvement suggestions:
 
 You can configure the application by setting the API key in the `.env` file.
 
-## Contributing
-
-Contributions are welcome! If you'd like to contribute to this project, please follow the [Contributing Guidelines](CONTRIBUTING.md).
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-Feel free to customize this README to include any additional information or instructions specific to your application. Additionally, you can add more sections or details as needed to provide comprehensive documentation for your users and contributors.
