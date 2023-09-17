@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Code Converter App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #upperdiv {
+            display: flex;
+            gap: 20px;
+            /* justify-content: space-between; */
+            align-items: center;
+            padding: 10px;
+            background-color: #f1f1f1;
+        }
+
+        #bigdiv {
+            display: flex;
+            justify-content: space-around;
+            gap: 10px;
+        }
+
+        #editor,
+        #outputCode {
+            height: 300px;
+            width: 100%;
+            max-width: 50%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        #outputCode {
+            background-color: black;
+            color: white;
+        }
+
+        #upperdiv button, #upperdiv select{
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 768px) {
+            #upperdiv {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            #upperdiv select,
+            #upperdiv button {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Code Converter App</h1>
+    <div id="upperdiv">
+        <select id="targetLanguage">
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+            <option value="javascript">Javascript</option>
+        </select>
+        <button id="convertButton">Convert</button>
+        <button id="debugButton">Debug</button>
+        <button id="qualityCheckButton">Quality Check</button>
+        <button id="copyButton">Copy Output</button> <!-- Add the new button here -->
+    </div>
+   
+    <div id="bigdiv">
+        <div id="editor"></div>
+        <pre id="outputCode"></pre>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/monaco-editor/min/vs/loader.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
